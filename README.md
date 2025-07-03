@@ -17,7 +17,7 @@ This project features a Royer oscillator circuit with Zero Voltage Switching (ZV
 ### Components:
   * **2x TO-220 IRFP4115 HEXFET MOSFETs**: High-current N-channel MOSFETs for ZVS switching.
   * **2x Metallized Polypropylene Tank Capacitors**: Film or ceramic capacitors rated for high current and frequency (2x in parallel to reduce ESR and ESL). Must be rated for > 150V with ESR <= 0.002Ω.
-  * **2x Inductors**: Use high-flux cores such as Sendust (e.g. KS157-125A) or nanocrystalline/Hi-Flux/MPP cores. Iron powder may overheat significantly and is way less efficient. Ferrite (MnZn) cores are not suitable for this application due to saturation at high currents.
+  * **2x 56uH Inductors**: Use high-flux cores such as Sendust (e.g. KS157-125A) or nanocrystalline/Hi-Flux/MPP cores. Iron powder may overheat significantly and is way less efficient. Ferrite (MnZn) cores are not suitable for this application due to saturation at high currents.
   * **5x US1M Diodes**: - Ultra-fast recovery diodes for transient protection, polarity protection, cross-coupled gate drive diodes.
   * **2x P6KE100A (x2)**: Used to protect MOSFET drain-source.
   * **2x P6KE24A**: For overvoltage suppression on 28V buck converter.
