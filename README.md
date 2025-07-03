@@ -6,7 +6,7 @@ This project features a Royer oscillator circuit with Zero Voltage Switching (ZV
 
 * **ZVS Royer Oscillator Topology** for efficient high-frequency AC generation
 * **Dual inductor tank circuit** (L1, L2) with parallel resonant capacitors for energy-efficient oscillation
-* **IRFP4415 MOSFETs** with Zener and TVS diode protection
+* **IRFP4115 MOSFETs** with Zener and TVS diode protection
 * **MP1584EN Buck Converter Stage** for regulated supply with polarity protection and relay-controlled hard-start.
 * **Relay-based hard start**: Ensures full supply voltage is applied abruptly to initiate stable oscillation; avoids the failure modes observed with soft-start circuits.
 * **Suitable for:**
@@ -15,7 +15,7 @@ This project features a Royer oscillator circuit with Zero Voltage Switching (ZV
   * CCFL backlighting or wireless power experiments
 
 ### Components:
-  * **2x TO-220 IRFP4415 HEXFET MOSFETs**: High-current N-channel MOSFETs for ZVS switching.
+  * **2x TO-220 IRFP4115 HEXFET MOSFETs**: High-current N-channel MOSFETs for ZVS switching.
   * **2x Metallized Polypropylene Tank Capacitors**: Film or ceramic capacitors rated for high current and frequency (2x in parallel to reduce ESR and ESL). Must be rated for > 150V with ESR <= 0.002Ω.
   * **2x Inductors**: Use high-flux cores such as Sendust (e.g. KS157-125A) or nanocrystalline/Hi-Flux/MPP cores. Iron powder may overheat significantly and is way less efficient. Ferrite (MnZn) cores are not suitable for this application due to saturation at high currents.
   * **5x US1M Diodes**: - Ultra-fast recovery diodes for transient protection, polarity protection, cross-coupled gate drive diodes.
