@@ -25,9 +25,10 @@ This project features a Royer oscillator circuit with Zero Voltage Switching (ZV
   * **2x 3W 330Ω Gate Resistors**: To control gate charging rate.
   * **1x MP1584EN Buck Converter**: For regulated low-voltage supply.
   * **1x 15A Sugar-cube Relay**: For polarity protection and hard-start functionality.
-  * **3x 1206 4.7kΩ Resistors (472)**: Connected between MOSFET gate and ground to ensure they turn off when not actively driven, and to limit LED current.
+  * **2x 1206 4.7kΩ Resistors (472)**: One used between a MOSFET gate and ground to ensure it turns off cleanly at high frequency; the other limits current through the indicator LED.
+  * **1x 1206 10kΩ Resistor (103)**: Connected between the other MOSFET gate and ground. Its higher resistance creates a slight gate bias difference that helps kick-start oscillation more reliably during power-up.
   * **1x 3mm Red/Green/Blue LED**: Status indicator.
-  * **5x 10µF 1206 X7R Ceramic Capacitors (C106)**: 2x across the buck converter for decoupling, 3x across the relay coil to provide soft turn-off (de-energizing delay).
+  * **5x 10µF(or more)/50V 1206 X7R Ceramic Capacitors (CBulk)**: 2x across the buck converter for decoupling, 3x across the relay coil to provide soft turn-off (de-energizing delay).
 
 ### Previews:
 
